@@ -1,4 +1,6 @@
-
+import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from "simplelightbox";
+import "/css/new-lightbox.css";
 
 const images = [
   {
@@ -82,10 +84,6 @@ const listItem = images
     </li>`)
   .join("");
 list.insertAdjacentHTML("afterbegin", listItem);
-
-import "simplelightbox/dist/simple-lightbox.min.css";
-import SimpleLightbox from "simplelightbox";
-import "/css/new-lightbox.css";
 
 let gallery = new SimpleLightbox('.gallery a', {
   captions: true,
